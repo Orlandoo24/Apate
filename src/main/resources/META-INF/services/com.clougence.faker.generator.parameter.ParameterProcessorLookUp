@@ -1,0 +1,2 @@
+com.dodo.apate.generator.processor.PublicSpiRegistry
+com.dodo.apate.spi.PostgresqlSpiRegistry
