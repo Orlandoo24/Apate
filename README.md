@@ -24,7 +24,7 @@ Execute Apate using the provided command-line interface (CLI) or integration wit
 Monitor the progress of data generation through the provided logging and performance monitoring features.
 Utilize generated data for comprehensive testing, maximizing test case coverage and efficiency.
 Support
-For any inquiries, issues, or feature requests, please reach out to the Apate development team at apate-support@yourdomain.com.
+For any inquiries, issues, or feature requests, please reach out to the Apate development team at 0x70jiaru@gmail.com.
 
 License
 Apate is licensed under the Apache License 2.0, permitting broad usage and modification subject to the terms of the license.
