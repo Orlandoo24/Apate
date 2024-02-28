@@ -2,7 +2,7 @@ package com.dodo.apate.realdb;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import com.dodo.apate.apateConfig;
-import com.dodo.apate.engine.apateEngine;
+import com.dodo.apate.engine.ApateEngine;
 import com.dodo.apate.generator.apateFactory;
 import com.dodo.apate.generator.apateRepository;
 import com.dodo.apate.generator.apateTable;
@@ -12,7 +12,7 @@ import net.hasor.cobble.logging.LoggerFactory;
 import org.junit.Test;
 
 /**
- * @author: (百里)周健鑫
+ *
  * @date: 2023/7/12 20:25
  * @description:
  */
@@ -34,7 +34,7 @@ public class RedshiftTest {
         apateConfig.setOpsRatio("I#100");
 //        apateConfig.setCustomTpcConf("redshift-widely.tpc");
 
-        DruidDataSource dataDs = DsUtils.dsRedshift();
+        DruidDataSource dataDs = com.dodo.apate.realdb.DsUtils.dsRedshift();
         apateFactory factory = new apateFactory(dataDs, apateConfig);
         apateRepository generator = new apateRepository(factory);
 
@@ -44,7 +44,7 @@ public class RedshiftTest {
         table.apply();
 
         // 生成数据
-        apateEngine engine = new apateEngine(dataDs, generator);
+        ApateEngine engine = new ApateEngine(dataDs, generator);
         engine.start(40, 80);
 
         // 监控信息
