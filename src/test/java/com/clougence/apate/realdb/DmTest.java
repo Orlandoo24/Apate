@@ -7,7 +7,7 @@ import org.junit.Test;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import com.dodo.apate.apateConfig;
-import com.dodo.apate.engine.apateEngine;
+import com.dodo.apate.engine.ApateEngine;
 import com.dodo.apate.generator.apateFactory;
 import com.dodo.apate.generator.apateRepository;
 import com.dodo.apate.generator.apateTable;
